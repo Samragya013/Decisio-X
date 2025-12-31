@@ -2,11 +2,9 @@
 import { GoogleGenAI, GenerateContentResponse, Type } from '@google/genai';
 import { UserSession, DecisionStructure, Assumption, Scenario, Recommendation, AssumptionReliability } from '../types';
 
+// The API key MUST be set in the environment variables of your deployment platform (e.g., Render).
 if (!process.env.API_KEY) {
-  // This is a placeholder for environments where the key is not set.
-  // In the target environment, this variable is expected to be present.
-  console.warn("API_KEY environment variable not set. Using a placeholder.");
-  process.env.API_KEY = "YOUR_API_KEY"; 
+  throw new Error("API_KEY environment variable not set.");
 }
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
