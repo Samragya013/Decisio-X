@@ -18,10 +18,16 @@ export const Card: React.FC<CardProps> = ({ children, className = '', title, ico
     ? 'bg-slate-800/50 backdrop-blur-md border-slate-700'
     : 'bg-slate-800/70 backdrop-blur-sm border-slate-700';
 
-  const hoverClasses = hasPointer && isDesktop ? 'transition-all duration-300 hover:border-cyan-500/20 hover:shadow-2xl hover:shadow-cyan-500/10' : '';
+  const glowClasses = isMobile 
+    ? 'shadow-lg' // Basic shadow for depth on mobile
+    : isDesktop 
+    ? 'shadow-[0_0_20px_rgba(0,200,255,0.1)]' // Desktop: visible cyan glow
+    : 'shadow-[0_0_15px_rgba(0,200,255,0.08)]'; // Tablet: Milder glow
+
+  const hoverClasses = hasPointer && isDesktop ? 'transition-all duration-300 hover:border-cyan-500/20 hover:shadow-[0_0_30px_rgba(0,200,255,0.25)]' : '';
 
   return (
-    <div className={`rounded-lg p-6 shadow-lg ${glassmorphismClasses} ${hoverClasses} ${className}`}>
+    <div className={`rounded-lg p-6 ${glassmorphismClasses} ${glowClasses} ${hoverClasses} ${className}`}>
       {title && (
         <div className="flex items-center mb-4">
           {icon && <div className="mr-3 text-cyan-400">{icon}</div>}
