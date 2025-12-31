@@ -1,0 +1,5 @@
+{
+  "name": "Decisio X",
+  "description": "Decisio X is a demo-only Decision Intelligence System that helps users think clearly through high-stakes personal or career decisions by structuring decisions, surfacing assumptions, simulating possible futures, and producing confidence-weighted recommendations. All user data is temporary and discarded after the session.",
+  "requestFramePermissions": []
+}
