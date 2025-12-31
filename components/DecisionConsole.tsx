@@ -6,7 +6,7 @@ import { AssumptionMappingStage } from './stages/AssumptionMappingStage';
 import { ScenarioSimulationStage } from './stages/ScenarioSimulationStage';
 import { RecommendationStage } from './stages/RecommendationStage';
 import { Stepper } from './ui/Stepper';
-import { useDeviceClass } from '../../hooks/useDeviceClass';
+import { useDeviceClass } from '../hooks/useDeviceClass';
 
 interface DecisionConsoleProps {
   session: UserSession;

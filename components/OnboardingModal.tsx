@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Role, Goal, TimeHorizon, UserSession } from '../types';
-import { useDeviceClass } from '../../hooks/useDeviceClass';
+import { useDeviceClass } from '../hooks/useDeviceClass';
 
 interface OnboardingModalProps {
   onComplete: (userData: Omit<UserSession, 'sessionId'>) => void;

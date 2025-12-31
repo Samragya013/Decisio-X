@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useDeviceClass } from '../../hooks/useDeviceClass';
+import { useDeviceClass } from '../hooks/useDeviceClass';
 
 interface LandingPageProps {
   onStart: () => void;
