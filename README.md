@@ -130,26 +130,26 @@ Animations adapt based on device capability and accessibility preferences.
 
 This project is built with a modern, lightweight, and performant stack designed for rapid development and a high-quality user experience, with a strong emphasis on frontend technologies and direct API integration.
 ### Frontend Framework & Language
-# React: The core UI library for building the component-based, interactive user interface.
-# TypeScript: Provides static typing to ensure code quality, catch errors early, and improve the developer experience with robust autocompletion and type-checking.
-# Vite: The build tool and development server, chosen for its extremely fast Hot Module Replacement (HMR) and optimized production builds.
+ React: The core UI library for building the component-based, interactive user interface.
+ TypeScript: Provides static typing to ensure code quality, catch errors early, and improve the developer experience with robust autocompletion and type-checking.
+ Vite: The build tool and development server, chosen for its extremely fast Hot Module Replacement (HMR) and optimized production builds.
 
 ### AI & Core Logic
-# Google Gemini API (@google/genai): The engine for the multi-stage decision intelligence pipeline. The application leverages the gemini-3-flash-preview model for its excellent balance of speed and analytical capability.
-# JSON Schema Mode: This key feature of the Gemini API is used to force the model to return structured, predictable JSON. It's crucial for the application's stability, as it eliminates fragile string parsing and allows for the direct mapping of AI responses to UI components.
+ Google Gemini API (@google/genai): The engine for the multi-stage decision intelligence pipeline. The application leverages the gemini-3-flash-preview model for its excellent balance of speed and analytical capability.
+ JSON Schema Mode: This key feature of the Gemini API is used to force the model to return structured, predictable JSON. It's crucial for the application's stability, as it eliminates fragile string parsing and allows for the direct mapping of AI responses to UI components.
 
 ### Styling & Design
-# Tailwind CSS: A utility-first CSS framework loaded via CDN to rapidly build the custom, responsive "cosmic space" theme directly within the component markup.
-# Custom CSS Animations: Embedded within components to create the starfield background, nebula gradients, and subtle UI animations, enhancing the visual experience.
-# Google Fonts: The Inter and Orbitron fonts are used to establish the application's clean, modern, and analytical typographic style.
+ Tailwind CSS: A utility-first CSS framework loaded via CDN to rapidly build the custom, responsive "cosmic space" theme directly within the component markup.
+ Custom CSS Animations: Embedded within components to create the starfield background, nebula gradients, and subtle UI animations, enhancing the visual experience.
+ Google Fonts: The Inter and Orbitron fonts are used to establish the application's clean, modern, and analytical typographic style.
 
 ### State & Session Management
-# React Hooks (useState, useEffect): All component-level state and side effects are managed using React's native hooks.
-# Browser sessionStorage: In strict alignment with the "temporary session" requirement, sessionStorage is used to persist user context only for the duration of the browser tab session, ensuring no data is retained after the user leaves.
+ React Hooks (useState, useEffect): All component-level state and side effects are managed using React's native hooks.
+ Browser sessionStorage: In strict alignment with the "temporary session" requirement, sessionStorage is used to persist user context only for the duration of the browser tab session, ensuring no data is retained after the user leaves.
 
 ### Module Loading & Deployment
-# ESM via esm.sh: For this demo, core dependencies like react and @google/genai are loaded directly in the browser via an importmap. This simplifies the project setup by removing the need for a local node_modules folder during development.
-# serve: A simple static file server included in the package.json. It's used in the npm start command to host the built application, making it compatible with "Web Service" deployment platforms like Render.
+ ESM via esm.sh: For this demo, core dependencies like react and @google/genai are loaded directly in the browser via an importmap. This simplifies the project setup by removing the need for a local node_modules folder during development.
+ serve: A simple static file server included in the package.json. It's used in the npm start command to host the built application, making it compatible with "Web Service" deployment platforms like Render.
 
 
 ---
